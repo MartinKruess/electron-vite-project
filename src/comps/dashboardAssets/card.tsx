@@ -1,7 +1,7 @@
 import styles from './card.module.css'
-import { IProps } from "../landingpageAssets/forms/logionIProps"
+import { AllCards } from "../landingpageAssets/forms/logionIProps"
 
-export const Card = ({card}: IProps) => {
+export const Card = ({card}: AllCards) => {
     return (
         <div className={styles.card}>
             <h3>{card.title}</h3>

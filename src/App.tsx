@@ -1,6 +1,6 @@
 import './App.css'
 import { Outlet } from 'react-router-dom'
-import { Navi } from './comps/landingpageAssets/navi/navi'
+import { Navi } from './comps/navi/navi'
 
 export const backendURL = "https://createagame.onrender.com/"
 
