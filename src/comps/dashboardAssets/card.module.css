@@ -1,0 +1,17 @@
+.card{
+    background-color: #ad472b;
+    width: 30rem;
+    height: 15rem;
+    line-height: 2.5rem;
+    padding: 1rem;
+    border: solid;
+}
+
+.card h3{
+    padding-bottom: 1.5rem;
+}
+
+.card div{
+    display: flex;
+    justify-content: space-between;
+}

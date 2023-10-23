@@ -23,12 +23,48 @@ body{
 }
 
 main{
-  width: 90%;
+  width: 94%;
+  display: flex;
+  flex-wrap: wrap;
   margin: auto;
 }
 
 section{
   width: 100%;
-  padding: 2rem 0.5rem
+  padding: 2rem 0.4rem;
 }
 
+/* Formular */
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset{
+  text-align: center;
+  padding: 3rem;
+}
+
+legend{
+  font-size: 2.5rem;
+}
+
+label, input, form button{
+  font-size: 2.2rem;
+  font-weight: 600;
+  border-radius: 1.2rem;
+}
+
+label{
+  display: block;
+  margin-top: 2rem;
+}
+
+input{
+  width: 70%;
+  text-align: center;
+  padding: 0.8rem 2.5rem;
+  border-radius: 2.5rem;
+}

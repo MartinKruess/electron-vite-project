@@ -2,30 +2,41 @@ import { useEffect, useState } from 'react'
 import styles from './main.module.css'
 import { LPMainLeft } from "./mainLeft"
 import { LPMainRight } from "./mainRight"
-import { Register } from './register'
+import { Register } from './forms/register/register'
 
 export const LPMain = () => {
-    const [registered, setRegistered] = useState(true)
+    const [login, setLogin] = useState(true)
 
     useEffect(() => {
 
-    }, [registered])
+    }, [login])
+
+    // const res = fetch('')
+    // const data = res.json()
+    // oder im Router react-router 6.4
+
+    // const user = {
+    //     username: '',
+    //     password: '',
+    //     mail: '',
+    //     tier: '',
+    // }
+
     return(
-        <main className={styles.main}>
-            {registered
+        <main>
+            {login
                 ? (
                     <>
                     <LPMainLeft />
-                    <LPMainRight registered={registered} setRegistered={setRegistered} />
+                    <LPMainRight login={login} setLogin={setLogin} />
                     </>
                 )
                 : (
                     <>
-                    <Register registered={registered} setRegister={setRegistered} />
+                    <Register login={login} setLogin={setLogin} />
                     </>
                 )
-            }
-            
+            }  
         </main>
     )
 }

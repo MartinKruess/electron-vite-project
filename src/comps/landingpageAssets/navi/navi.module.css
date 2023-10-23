@@ -1,0 +1,22 @@
+.naviContainer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2.5rem;
+}
+
+.navbar{
+    width: 40%;
+    display: flex;
+    font-weight: 500;
+    gap: 2.5rem;
+}
+
+.navbar a{
+    color: #ededed;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #dd5858;
+}

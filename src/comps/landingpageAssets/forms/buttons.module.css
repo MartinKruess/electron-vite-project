@@ -1,0 +1,27 @@
+.btnContainer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnContainerReg{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.loginBtn{
+    background-color: transparent;
+    color: #ededed99;
+    width: 15rem;
+    padding: 0.5rem 1rem;
+    /* margin-top: 3.5rem; */
+    border: solid 0.5rem #e5661299
+}
+
+.loginBtn:hover{
+    border: solid 0.5rem #e56612;
+    color: #ededed;
+}

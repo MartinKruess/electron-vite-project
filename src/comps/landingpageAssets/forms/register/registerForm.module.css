@@ -1,0 +1,30 @@
+.registerForm{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.btnContainerReg{
+    width: 25%;
+}
+
+.radio div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.radio div label{
+    width: 50%;
+    margin-top: 0;
+}
+
+.radio div input{
+    width: 30%;
+    height: 2rem;
+    accent-color: #e56612;
+}
+
+.info{
+    font-size: 1.5rem;
+}

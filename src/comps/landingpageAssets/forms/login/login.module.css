@@ -1,0 +1,19 @@
+.loginContainer{
+    width: 60rem;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginForm {
+    width: 80%;
+    border: solid 0.1rem #ccc;
+    border-radius: 3rem;
+    box-shadow:
+    0.4rem 0.4rem 0.9rem #ccc9,
+    -0.1rem -0.2rem 0.2rem #ccc9,
+    -0.2rem 0.4rem 0.2rem #ccc9,
+    0.4rem -0.2rem 0.2rem #ccc9;
+  }

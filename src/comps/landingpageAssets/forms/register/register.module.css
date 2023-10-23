@@ -1,0 +1,14 @@
+.registerContainer{
+    height: 80rem;
+}
+
+.registerForm{
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1.5rem
+}
+
+.registerButtonContainer{
+    width: 94%;
+    padding: 1rem 20rem;
+}

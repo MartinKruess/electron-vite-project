@@ -1,18 +1,7 @@
-import styles from './mainRight.module.css'
+import { IProps } from './forms/logionIProps'
+import { Login } from './forms/login/login'
 
-export const LPMainRight = ({register = false, setRegister}) => {
-    return(
-        <section className={styles.loginContainer}>
-            <form className={styles.loginForm}>
-                <label  className={styles.loginLabel} htmlFor="username">Username</label>
-                <input type="text" id="username" className={styles.loginInput}/>
-                <label className={styles.loginLabel} htmlFor="password">Password</label>
-                <input type="password" id="password" className={styles.loginInput}/>
-                <div className={styles.btnContainer}>
-                    <button className={styles.loginBtn}>Login</button>
-                    <button className={styles.loginBtn} onClick={() => setRegister(!register)}>Signup</button>
-                </div>
-            </form>
-        </section>
-    )
+export const LPMainRight = ({login = false, setLogin}: IProps) => {
+
+    return <Login login={login} setLogin={setLogin}/>
 }
