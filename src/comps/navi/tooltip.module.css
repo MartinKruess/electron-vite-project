@@ -1,0 +1,28 @@
+.hoverText{
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0 0 1.3rem 1.3rem;
+  display: inline-block;
+  position: absolute;
+  border: solid 0.2rem #ccc9;
+  border-radius: 1.8rem;
+}
+
+.hoverText:hover .tooltipText {
+  visibility: visible;
+}
+
+.tooltipText {
+  background-color: #141414;
+  width: 18rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  visibility: hidden;
+  position: absolute;
+  left: 3rem;
+  top: -3rem;
+  border-radius: 1rem;
+  z-index: 1;
+}

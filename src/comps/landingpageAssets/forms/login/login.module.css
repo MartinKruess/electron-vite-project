@@ -9,6 +9,7 @@
 
 .loginForm {
     width: 80%;
+    padding: 2rem;
     border: solid 0.1rem #ccc;
     border-radius: 3rem;
     box-shadow:
@@ -16,4 +17,12 @@
     -0.1rem -0.2rem 0.2rem #ccc9,
     -0.2rem 0.4rem 0.2rem #ccc9,
     0.4rem -0.2rem 0.2rem #ccc9;
+  }
+
+  .loginForm input{
+    margin-top: 0.8rem;
+  }
+
+  #password{
+    margin-bottom: 3rem;
   }

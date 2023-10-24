@@ -1,7 +1,15 @@
+fieldset{
+    min-height: 56.72rem;
+}
+
 .registerForm{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.registerForm label{
+    position: relative;
 }
 
 .btnContainerReg{
@@ -14,17 +22,27 @@
     align-items: center;
 }
 
+.radio{
+    margin-top: 2rem;
+}
+
+.radio div{
+    width: 60%;
+    margin: auto;
+}
+
+.radioBtnBox{
+    padding-top: 1.5rem;
+}
+
 .radio div label{
-    width: 50%;
+    width: 65%;
     margin-top: 0;
+    text-align: start;
 }
 
 .radio div input{
     width: 30%;
     height: 2rem;
     accent-color: #e56612;
-}
-
-.info{
-    font-size: 1.5rem;
 }

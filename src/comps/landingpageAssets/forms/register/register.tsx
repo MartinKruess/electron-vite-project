@@ -12,6 +12,9 @@ export const Register = ({login, setLogin}: IProps) => {
                 <RegisterFormPersonal />
                 <RegisterForm1 />
                 <RegisterForm2 />
+                <label className={styles.info}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus architecto molestiae nulla minima voluptatum recusandae odio. Fugit, soluta harum! Molestiae aspernatur neque, reiciendis fugiat unde ab ullam? Accusamus, nulla?
+                </label>
                 <div className={styles.registerButtonContainer}>
                     <Buttons login={login} setLogin={setLogin}/>
                 </div>
