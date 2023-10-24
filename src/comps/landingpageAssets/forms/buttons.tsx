@@ -1,4 +1,4 @@
-import { IProps } from './logionIProps'
+import { IProps } from '../../reusables/propsLogic'
 import styles from './buttons.module.css'
 
 export const Buttons = ({login, setLogin}: IProps) => {

@@ -1,4 +1,4 @@
-import { IProps } from '../logionIProps'
+import { IProps } from '../../../reusables/propsLogic'
 import { Buttons } from '../buttons'
 import styles from './login.module.css'
 

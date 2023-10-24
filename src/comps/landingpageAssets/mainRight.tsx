@@ -1,4 +1,4 @@
-import { IProps } from './forms/logionIProps'
+import { IProps } from '../reusables/propsLogic'
 import { Login } from './forms/login/login'
 
 export const LPMainRight = ({login = false, setLogin}: IProps) => {

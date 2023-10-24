@@ -1,20 +1,22 @@
 import styles from './registerForm.module.css'
-import { Tooltip } from '../../../navi/tooltip'
+import { formData } from '../../../reusables/formData'
+import { Input } from '../../../reusables/inputs'
+import { Credits } from '../../../reusables/propsLogic'
 
-export const RegisterForm1 = () => {
+export const RegisterForm1 = ({credits, setCredits}: Credits) => {
+
+    const calcSum = (e) => {
+        console.log("TypeOf", typeof e)
+        setCredits({...credits, [e.target.name]: e.target.value })
+    }
+
+    const sum = Number(credits.gehalt) + Number(credits.zusatz)
+
     return(
-        <fieldset>
+        <fieldset onChange={(e) => calcSum(e)}>
             <legend>Einnahmen (Optional)</legend>
-            <label className={styles.loginLabel} htmlFor="password">Haupteinnahme<Tooltip /></label>
-            <input type="number" id="gehalt" className={styles.loginInput}/>
-            <label className={styles.loginLabel} htmlFor="password">Nebeneinkünfte</label>
-            <input type="password" id="password" className={styles.loginInput}/>
-            <label className={styles.loginLabel} htmlFor="password">Password</label>
-            <input type="password" id="password" className={styles.loginInput}/>
-            <label className={styles.loginLabel} htmlFor="password">Password</label>
-            <input type="password" id="password" className={styles.loginInput}/>
-            <label className={styles.loginLabel} htmlFor="password">Password</label>
-            <input type="password" id="password" className={styles.loginInput}/>
+            {formData.map((data, i) => <Input key={i} data={data} />)}
+            <label className={styles.sum}>Gesamt Einnahmen: {sum}€</label>
         </fieldset>
     )
 }

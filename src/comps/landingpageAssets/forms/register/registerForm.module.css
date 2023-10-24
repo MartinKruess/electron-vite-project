@@ -5,7 +5,6 @@ fieldset{
 .registerForm{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .registerForm label{
@@ -45,4 +44,8 @@ fieldset{
     width: 30%;
     height: 2rem;
     accent-color: #e56612;
+}
+
+.sum{
+    justify-self: flex-end;
 }

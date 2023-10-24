@@ -1,5 +1,5 @@
 import styles from './card.module.css'
-import { AllCards } from "../landingpageAssets/forms/logionIProps"
+import { AllCards } from "../reusables/propsLogic"
 
 export const Card = ({card}: AllCards) => {
     return (
